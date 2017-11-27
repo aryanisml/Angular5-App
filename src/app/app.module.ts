@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { zoneService } from "./Services/zoneservice";
+import { ZoneModle  } from "./Services/zonemodel";
+
 
 
 @NgModule({
@@ -12,7 +15,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [zoneService,ZoneModle],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
